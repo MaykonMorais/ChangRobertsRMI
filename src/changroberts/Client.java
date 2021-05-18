@@ -23,9 +23,11 @@ public class Client extends ImplConnection {
 		
 		LinkedList<Node> l = new LinkedList<Node>();
 
-		l.add(new Node(3,false,2002));//2002
-		l.add(new Node(1,false,2000));//2000		
-		l.add(new Node(2,false,2001));//2001
+		l.add(new Node(3,false,2002));
+		l.add(new Node(4,false,2003));
+		l.add(new Node(5,false,2004));
+		l.add(new Node(1,false,2000));
+		l.add(new Node(2,false,2001));
 
 		implClient.registerRMI(2000); 
 

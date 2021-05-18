@@ -72,7 +72,7 @@ public class ImplConnection implements IConnection{
 
 			//Movimenta fila
 			Node next = paths.remove();
-			paths.add(next);
+			//paths.add(next);
 
 			election(String.valueOf(port),port,paths);
 			e.printStackTrace();
