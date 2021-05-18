@@ -1,23 +1,16 @@
 package structure;
 
-public class Node {
+import java.io.Serializable;
 
-		private int id;
+public class Node implements Serializable {
+
 	    public boolean leader = false;
 	    private Integer neighbour; // vizinhos - portas
 	    
 	    public Node(int id, boolean leader, Integer vizinhos) {
-	    	setId(id);
 	    	setLeader(leader);
 	    	setNeighbours(vizinhos);
 	    }
-	    
-		public int getId() {
-			return id;
-		}
-		public void setId(int id) {
-			this.id = id;
-		}
 		public boolean isLeader() {
 			return leader;
 		}
